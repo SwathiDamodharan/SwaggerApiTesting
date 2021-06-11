@@ -1,26 +1,56 @@
-# SwaggerApiTesting
-    * Purpose of this project 
-        This project automates backend api calls for all modules of pet section under "https://petstore.swagger.io/#/"
-        For each module, each seperate testcase class file has been created
-     
-             Testcase name                   -              Module names 
-        1) TC001_Post_Upload_Petimage        -  This cover "Upload an Image" module
-        2) TC002_Post_addANewPet             -  This cover "Add a new pet to the store" module
-        3) Tc003_Put_updateAnExistingPet     -  This cover "Update an existing pet" module
-        4) TC004_Get_findPetByStatus         -  This cover "Find pets by status" module
-        5) TC005_Get_FindByPetID             -  This cover "Find pet By ID" module
-        6) TC006_Post_updatePetWithFormData  -  This covers "Update apet in the store with form data" module
-        7) TC007_Delete_DeleteAPet -         -  This cover "Delete a pet" module
+1. **Project Title:**
 
-    * Path of testcases:
-        Its under scr/main/java/petStore_API
-    * jsonFiles:
-        This folder contain all input jsonFiles
-    * testngPetSwagger.xml:
-        This is testng file. I have converted all the testcases into this file. All the testcases can be executed at one go from this file.
-    * driver:
-        This has exe file for chromedriver(chrome version - 91.0.44)
-    * This is a maven project with all dependencies on pom.xml
-    * Version or java - jdk1.8
-    * Version of maven - 3.5.4
-    * All other jar files version can be found under Pom.xml file
+         •	This is to automate the flow of Pet API calls testing under https://petstore.swagger.io/ url
+      
+2.	**Description:** 
+
+         •	This project cover automation flow for 
+      
+         •	Upload an Image Module for existing Pet ID through “POST” request
+       
+         •	Add a new pet to the store through “Post” request
+       
+         •	Update an existing pet – To update details for an existing pet ID through “PUT” request
+       
+         •	Find pets by status – To find pets based on their availability status through “GET” request
+       
+         •	Find pet by ID – To find pets with pet ID through “GET” request
+       
+         •	Update a pet in the store with form data – To update form details for existing pet ID through “POST” request.
+       
+         •	Delete a pet – To delete an existing pet ID and corresponding entries through “DELETE” request.
+
+
+3.**Prerequisites:**
+
+         •	Download Java 8 (jdk1.8) version
+   
+         •	Download Apache Maven - 3.5.4
+       
+         •	Download Eclipse – Eclipse Oxygen
+       
+         •	Other External libraries are added as dependency in POM.xml file. It get downloaded automatically once the project is imported.
+   
+4.**Path of Project:**
+
+         •	Testcase classes are under src/main/java/petStore_API
+      
+         •	Input file – json input files are under folder name jsonFiles
+      
+         •	In git repo, project is present under “master” branch
+   
+5.**Execution Flow**
+
+                  Testcase name                             Module names
+             * TC001_Post_Upload_Petimage	        -   This cover "Upload an Image" flow
+             * TC002_Post_addANewPet	           -   This cover "Add a new pet to the store" flow
+             * Tc003_Put_updateAnExistingPet	     -   This cover "Update an existing pet" flow
+             * TC004_Get_findPetByStatus	        -   This cover "Find pets by status" flow
+             * TC005_Get_FindByPetID	           -   This cover "Find pet by ID" flow
+             * TC006_Post_updatePetWithFormData   -   This covers "Update a pet in the store with form data" flow	These covers "Update a pet in the store with form data" flow
+             * TC007_Delete_DeleteAPet 	        -   This cover "Delete a pet" flow
+      
+        •   The entire flow of the project can be executed from testngPetSwagger.xml file. This has test suite with all the test cases included.
+      
+        •	Source of input is from json file, it read the data from json file and executes automatically.
+

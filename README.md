@@ -51,7 +51,11 @@
              * TC007_Delete_DeleteAPet                -This cover "Delete a pet" flow
      
          •	The entire flow of the project can be executed from testngPetSwagger.xml file. This has test suite with all the test cases included
-         •        Source of input is from json file, it read the data from json file and executes automatically.
+         •	Source of input is from json file, it read the data from json file and executes automatically.
+         
+6.**Non-Coding scenario question:**
+
+         •	This documentation cover second part of the question. "In terms of reporting, what would be your best solution for displaying test results from the previous task as part of the CI process and therefore making it usable for the whole development team?" 
 
 
 
